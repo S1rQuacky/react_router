@@ -13,11 +13,11 @@ const Dashboard = (props) => {
     return (
         <div className="stocks">
             {stocks.map((current) => {
-                const { name, symbol } = current;
+                
 
                 return (
-                    <Link to={`/stock/${symbol}`}>
-                        <h2>{name}</h2>
+                    <Link to={`/stock/${current.symbol}`} key={current.symbol}>
+                        <h2>{current.name}</h2>
                     </Link>
                 )
             })}

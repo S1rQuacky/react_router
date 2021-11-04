@@ -16,12 +16,12 @@ function App() {
       <Route path="/istocks">
         <Stocks />
       </Route>
-      <Route path="/stock/:symbol" render={(routerProps) => <Stock {...routerProps}/>}/>
+      <Route path="/stock/:symbol" render={(routerProps) => <Stock {...routerProps}/>}
+      />
       <Route path="/about">
         <About />
       </Route>
-      </Switch>
-      
+      </Switch>  
     </div>
   );
 }
